@@ -81,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-
+//un-commented  requestPermissions
         if (!checkPermissions()) {
-            //requestPermissions();
+            requestPermissions();
         } else {
             getLastLocation();
         }
